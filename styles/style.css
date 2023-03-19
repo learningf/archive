@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+.filter-white{
+    filter: invert(99%) sepia(1%) saturate(1399%) hue-rotate(223deg) brightness(117%) contrast(92%);
+}
+
+.boxes img {
+    scale: 0.8;
+}
+
+.twitter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.instagram {
+    display: flex;
+    align-items: center;
+}
+.telegram {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #111016;
+    color: whitesmoke;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card {
+    width: 100%;
+    height: 25%;
+}
+
+.welcomeMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.welcomeMessage p {
+    opacity: 0.8;
+}
+
+.card {
+    padding: 4% 5%;
+}
+.boxes {
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 7px 27px -10px rgba(0,0,0,0.79); 
+box-shadow: 2px 7px 27px -10px rgba(0, 0, 0, 0.79);
+word-wrap: break-word;
+}
+
+.item1 {
+    position: relative;
+    background-color: #980241;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.item2 {
+    position: relative;
+    background-color: #720e80;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.item3 {
+    position: relative;
+    background-color: #742D4F;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.item4 {
+    position: relative;
+    background-color: #B20521;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.me {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.me a {
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+.item1 {
+    background-image: linear-gradient(to bottom right, #11101680, #980241);
+}
+.item2 {
+    background-image: linear-gradient(to bottom left,#11101680, #720e80);
+}
+
+.item3 {
+    background-image: linear-gradient(#742D4F, #11101680);
+}
+
+.item4 {
+    background-image: linear-gradient(#B20521, #11101580);
+}
+
+
+
+.logos {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    opacity: 0.2;
+}
+
+.boxes:hover  {
+    transform: scale(1.03, 1.07);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(178,5,33,0.62); 
+ box-shadow: 0px 0px 25px 0px rgba(0,5,0,1);
+ z-index: 5;
+
+    
+}
+.boxes.item1:hover  {
+    transform: scale(1.06);
+}
+.boxes.item4:hover  {
+    transform: scale(1.06);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(178,5,33,0.62); 
+box-shadow: 0px 0px 25px 0px rgba(0,5,0,1);
+}
+
+.twitter:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(99%) saturate(4307%) hue-rotate(343deg) brightness(79%) contrast(104%);
+    transform: scale(1.1);
+}
+.instagram:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(99%) saturate(4307%) hue-rotate(343deg) brightness(79%) contrast(104%);
+    transform: scale(1.1);
+}
+
+.telegram:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(99%) saturate(4307%) hue-rotate(343deg) brightness(79%) contrast(104%);
+    transform: scale(1.1);
+}
+
+
+.texts {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.boxes { 
+    white-space: initial; 
+  }
+
+.boxes p {
+    margin-bottom: 5px;
+}
+
+
+.texts {
+    opacity: 0.6;
+}
+
+.footnote {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.05;
+}
+.footnote p {
+    font-size: 0.5rem;
+}
+
+  @media (min-width: 576px) {
+    .texts {
+        display: block;
+    }
+
+    .footnote {
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+    .top {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    .item1 {
+        flex-basis: 35%;
+        margin-right: 5px;
+        padding: 15px;
+    }
+    .item2 {
+        flex-basis: 65%;
+        padding: 15px;
+    }
+
+    .item3 {
+        flex-basis: 65%;
+        margin-right: 5px;
+        padding: 15px;
+    }
+
+    .item4 {
+        flex-basis: 35%;
+        padding: 15px;
+    }
+
+.boxes img {
+    scale: 1;
+}
+}

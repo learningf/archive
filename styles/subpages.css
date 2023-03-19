@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+a {
+    font-size: 5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: red;
+}
